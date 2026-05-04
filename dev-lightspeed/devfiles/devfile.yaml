@@ -6,3 +6,9 @@ components:
     container:
       image: quay.io/dbrugger946/dls-devspaces:latest
       memoryLimit: 4Gi
+    attributes:
+      # This ensures the extensions are installed in the VS Code editor
+      vscode-extensions:
+        - redhat.java
+        - redhat.mta-vscode-extension-core
+        - redhat.mta-vscode-extension-java

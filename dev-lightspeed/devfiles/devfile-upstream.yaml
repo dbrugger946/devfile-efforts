@@ -6,3 +6,9 @@ components:
     container:
       image: quay.io/dbrugger946/dls-devspaces:upstream-0.5.16
       memoryLimit: 4Gi
+    attributes:
+      # This ensures the extensions are installed in the VS Code editor
+      vscode-extensions:
+        - redhat.java
+        - konveyor.konveyor-core
+        - konveyor.konveyor-java
