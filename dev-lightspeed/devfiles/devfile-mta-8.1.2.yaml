@@ -1,0 +1,18 @@
+schemaVersion: 2.2.0
+metadata:
+  name: dls-devspaces
+components:
+  - name: kai-dev-container
+    container:
+      image: quay.io/dbrugger946/dls-devspaces:mta-8.1.2
+      memoryLimit: 4Gi
+    attributes:
+      # This ensures the extensions are installed in the VS Code editor
+      vscode-extensions:
+        - redhat.java
+        - redhat.mta-core
+        - redhat.mta-go
+        - redhat.mta-java
+        - redhat.mta-csharp
+        - redhat.mta-javascript
+        - redhat.mta-vscode-extension
